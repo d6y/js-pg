@@ -1,11 +1,12 @@
-# Demo of accessing PostgreSQL from JavaScript
+# Demo of accessing PostgreSQL from node
 
 Two examples:
 
 1. Using Scala JS
 2. Using plain JS
 
-I both cases we are targeting the node.js runtime, not a web browser.
+I both cases we are targeting the node.js runtime, not a web browser,
+and using [node-postgres](https://node-postgres.com/).
 
 # scalajs
 
@@ -33,8 +34,7 @@ Result row 0: MapLike.DefaultValuesIterable(Tue Jan 29 2019 15:00:14 GMT+0000 (G
 To build:
 
 ```
-$ sbt
-$ fastOptJS::webpack
+$ sbt fastOptJS::webpack
 ```
 
 Then:
