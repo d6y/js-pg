@@ -34,6 +34,7 @@ object Main {
       client.end()
     }
 
+    // Polling the future for results...
     import scala.concurrent.ExecutionContext.Implicits.global
     scala.scalajs.js.timers.setTimeout(500) {
       println(fr.foreach(handler))

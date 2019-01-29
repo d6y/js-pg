@@ -1,9 +1,8 @@
 import scala.scalajs.js
 import js.annotation._
 
-// NB: there more more fields and methods than
-// I've captured here. See:
-// https://node-postgres.com/api/client
+// NB: there more more fields and methods than I've captured here.
+// See: https://node-postgres.com/api/client
 
 @js.native
 @JSImport("pg", "Client")
@@ -29,6 +28,10 @@ trait PgError extends js.Object {}
 @js.native
 trait PgResult extends js.Object {
   val rowCount: Int = js.native
+
+  // An element in the array for each row from the database.
+  // A row is represented here as a dictionary. I've said the values
+  // are Strings, but they could be anything.
   val rows: js.Array[js.Dictionary[String]] = js.native
-  // ... https://node-postgres.com/api/result
+  // etc...for more fields see: https://node-postgres.com/api/result
 }
