@@ -5,7 +5,7 @@ Two examples:
 1. Using Scala JS
 2. Using plain JS
 
-I both cases we are targeting the node.js runtime, not a web browser,
+In both cases we are targeting the node.js runtime, not a web browser,
 and using [node-postgres](https://node-postgres.com/).
 
 # scalajs
